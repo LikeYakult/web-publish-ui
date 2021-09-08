@@ -1,0 +1,74 @@
+.trade-kline-loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 2009;
+    overflow: hidden;
+    @include backgroundDeppThemeStyles;
+}
+
+.trade-kline-loading.netWork .circle_animate:after {
+    display: none;
+}
+
+
+.circle-container {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.icon_text_rear {
+    margin-left: 5px;
+    color:  #FE9A00;
+    animation: loading 1s linear infinite;
+}
+
+.circle_animate {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    opacity: 0;
+    transform: rotate(225deg);
+    animation-iteration-count: infinite;
+    animation-name: orbit;
+    animation-duration: 5.5s;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.circle_animate:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    @include afterBottomActive;
+}
+
+.circle_animate:nth-child(2) {
+    animation-delay: 240ms;
+}
+
+.circle_animate:nth-child(3) {
+    animation-delay: 480ms;
+}
+
+.circle_animate:nth-child(4) {
+    animation-delay: 720ms;
+}
+
+.circle_animate:nth-child(5) {
+    animation-delay: 960ms;
+}
+
+.circle_animate:nth-child(6) {
+    animation-delay: 1200ms;
+}

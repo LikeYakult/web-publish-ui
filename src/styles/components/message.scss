@@ -1,0 +1,86 @@
+.trade-message {
+    font-size: 14px;
+    position: fixed;
+    z-index: 1010;
+    width: 100%;
+    top: 16px;
+    left: 0;
+    pointer-events: none
+}
+
+.trade-message-notice {
+    padding: 8px;
+    text-align: center;
+    -webkit-transition: height .3s ease-in-out, padding .3s ease-in-out;
+    transition: height .3s ease-in-out, padding .3s ease-in-out
+}
+
+.trade-message-notice:first-child {
+    margin-top: -8px
+}
+
+.trade-message-notice-close {
+    position: absolute;
+    right: 4px;
+    top: 10px;
+    color: #999;
+    outline: 0
+}
+
+.trade-message-notice-close i.trade-icon {
+    font-size: 22px;
+    color: #999;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+    position: relative;
+    top: -3px
+}
+
+.trade-message-notice-close i.trade-icon:hover {
+    color: #444
+}
+
+.trade-message-notice-content {
+    display: inline-block;
+    pointer-events: all;
+    padding: 8px 16px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    background: #fff;
+    position: relative
+}
+
+.trade-message-notice-content-text {
+    display: inline-block
+}
+
+.trade-message-notice-closable .trade-message-notice-content-text {
+    padding-right: 32px
+}
+
+.trade-message-success .trade-icon {
+    color: #19be6b
+}
+
+.trade-message-error .trade-icon {
+    color: #ed4014
+}
+
+.trade-message-warning .trade-icon {
+    color: #f90
+}
+
+.trade-message-info .trade-icon, .trade-message-loading .trade-icon {
+    color: #2d8cf0
+}
+
+.trade-message .trade-icon {
+    margin-right: 4px;
+    font-size: 16px;
+    vertical-align: middle
+}
+
+.trade-message-custom-content span {
+    vertical-align: middle
+}

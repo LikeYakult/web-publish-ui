@@ -1,0 +1,462 @@
+.trade-select {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    color: #515a6e;
+    font-size: 14px;
+    line-height: normal;
+    position: relative;
+}
+
+.trade-select-selection {
+    display: block;
+    box-sizing: border-box;
+    outline: 0;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 2px;
+    transition: all .2s ease-in-out;
+    @include btnBorderColor;
+}
+
+
+.trade-select-selection-focused .trade-select-arrow, .trade-select-selection:hover .trade-select-arrow {
+    display: inline-block
+}
+
+.trade-select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    line-height: 1;
+    transform: translateY(-50%);
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+    @include linkHoverColor;
+}
+
+.trade-select-visible .trade-select-selection {
+    outline: 0;
+}
+
+.trade-select-visible .trade-select-arrow {
+    transform: translateY(-50%) rotate(180deg);
+    display: inline-block
+}
+
+.trade-select-disabled .trade-select-selection {
+    background-color: #f3f3f3;
+    opacity: 1;
+    cursor: not-allowed;
+    color: #ccc
+}
+
+.trade-select-disabled .trade-select-selection:hover {
+    border-color: #e3e5e8
+}
+
+.trade-select-disabled .trade-select-selection .trade-select-arrow {
+    color: #ccc
+}
+
+.trade-select-disabled .trade-select-selection:hover {
+    border-color: #dcdee2;
+    box-shadow: none;
+}
+
+.trade-select-disabled .trade-select-selection:hover .trade-select-arrow {
+    display: inline-block;
+}
+
+.trade-select-single .trade-select-selection {
+    height: 32px;
+    position: relative;
+}
+
+.trade-select-single .trade-select-selection .trade-select-placeholder {
+    color: #c5c8ce;
+}
+
+.trade-select-single .trade-select-selection .trade-select-placeholder, .trade-select-single .trade-select-selection .trade-select-selected-value {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 8px;
+    padding-right: 24px
+}
+
+.trade-select-multiple .trade-select-selection {
+    padding: 0 24px 0 4px
+}
+
+.trade-select-multiple .trade-select-selection .trade-select-placeholder {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #c5c8ce;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 4px;
+    padding-right: 22px
+}
+
+.trade-select-large.trade-select-single .trade-select-selection {
+    height: 36px
+}
+
+.trade-select-large.trade-select-single .trade-select-selection .trade-select-placeholder, .trade-select-large.trade-select-single .trade-select-selection .trade-select-selected-value {
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px
+}
+
+.trade-select-large.trade-select-multiple .trade-select-selection {
+    min-height: 36px
+}
+
+.trade-select-large.trade-select-multiple .trade-select-selection .trade-select-placeholder, .trade-select-large.trade-select-multiple .trade-select-selection .trade-select-selected-value {
+    min-height: 34px;
+    line-height: 34px;
+    font-size: 14px
+}
+
+.trade-select-small.trade-select-single .trade-select-selection {
+    height: 24px;
+    border-radius: 3px
+}
+
+.trade-select-small.trade-select-single .trade-select-selection .trade-select-placeholder, .trade-select-small.trade-select-single .trade-select-selection .trade-select-selected-value {
+    height: 22px;
+    line-height: 22px
+}
+
+.trade-select-small.trade-select-multiple .trade-select-selection {
+    min-height: 24px;
+    border-radius: 3px
+}
+
+.trade-select-small.trade-select-multiple .trade-select-selection .trade-select-placeholder, .trade-select-small.trade-select-multiple .trade-select-selection .trade-select-selected-value {
+    height: auto;
+    min-height: 22px;
+    line-height: 22px
+}
+
+.trade-select-input {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 24px 0 8px;
+    font-size: 12px;
+    outline: 0;
+    border: none;
+    box-sizing: border-box;
+    color: #515a6e;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer
+}
+
+.trade-select-input::-moz-placeholder {
+    color: #c5c8ce;
+    opacity: 1
+}
+
+.trade-select-input:-ms-input-placeholder {
+    color: #c5c8ce
+}
+
+.trade-select-input::-webkit-input-placeholder {
+    color: #c5c8ce
+}
+
+.trade-select-input[disabled] {
+    cursor: not-allowed;
+    color: #ccc;
+    -webkit-text-fill-color: #ccc
+}
+
+.trade-select-single .trade-select-input {
+    width: 100%
+}
+
+.trade-select-large .trade-select-input {
+    font-size: 14px;
+    height: 36px
+}
+
+.trade-select-small .trade-select-input {
+    height: 22px;
+    line-height: 22px
+}
+
+.trade-select-multiple .trade-select-input {
+    height: 30px;
+    line-height: 32px;
+    padding: 0 0 0 4px
+}
+
+.trade-select-not-found {
+    text-align: center;
+    color: #c5c8ce
+}
+
+.trade-select-not-found li:not([class^=ivu-]) {
+    margin-bottom: 0
+}
+
+.trade-select-loading {
+    text-align: center;
+    color: #c5c8ce
+}
+
+.trade-select-multiple .trade-tag {
+    height: 24px;
+    line-height: 22px;
+    margin: 3px 4px 3px 0;
+    max-width: 99%;
+    position: relative
+}
+
+.trade-select-multiple .trade-tag span:not(.trade-select-max-tag) {
+    display: block;
+    margin-right: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.trade-select-multiple .trade-tag i {
+    display: block;
+    position: absolute;
+    right: 4px;
+    top: 4px
+}
+
+.trade-select-large.trade-select-multiple .trade-tag {
+    height: 28px;
+    line-height: 26px;
+    font-size: 14px
+}
+
+.trade-select-large.trade-select-multiple .trade-tag i {
+    top: 6px
+}
+
+.trade-select-small.trade-select-multiple .trade-tag {
+    height: 17px;
+    line-height: 15px;
+    font-size: 12px;
+    padding: 0 6px;
+    margin: 3px 4px 2px 0
+}
+
+.trade-select-small.trade-select-multiple .trade-tag span {
+    margin-right: 14px
+}
+
+.trade-select-small.trade-select-multiple .trade-tag i {
+    top: 1px;
+    right: 2px
+}
+
+.trade-select-dropdown-list {
+    min-width: 100%;
+    list-style: none;
+    padding: 6px 0;
+    &.no-padding {
+        padding: 0;
+    }
+}
+
+.trade-select-prefix {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.trade-select-prefix i {
+    vertical-align: top
+}
+
+.trade-select-head-with-prefix {
+    display: inline-block !important;
+    vertical-align: middle
+}
+
+.trade-select-single .trade-select-prefix {
+    padding-left: 4px
+}
+
+.trade-select-multiple .trade-select-head-with-prefix, .trade-select-single .trade-select-head-with-prefix {
+    padding-left: 0 !important
+}
+
+.trade-select-head-flex {
+    @include flexAlignItemsCenter;
+}
+
+.trade-select-multiple .trade-select-head-flex .trade-select-prefix {
+    margin-right: 4px;
+}
+
+.trade-select-item {
+    margin: 0;
+    line-height: normal;
+    padding: 7px 16px;
+    clear: both;
+    color: #515a6e;
+    font-size: 12px !important;
+    white-space: nowrap;
+    list-style: none;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+.trade-select-item:hover {
+    background: #f3f3f3;
+}
+
+.trade-select-item-focus {
+    background: #f3f3f3;
+    @include linkHoverColor;
+}
+
+.trade-select-item-disabled {
+    color: #c5c8ce;
+    cursor: not-allowed;
+}
+
+.trade-select-item-disabled:hover {
+    color: #c5c8ce;
+    background-color: #fff;
+    cursor: not-allowed;
+}
+
+.trade-select-item-selected, .trade-select-item-selected:hover {
+    @include linkHoverColor;
+}
+
+.trade-select-item-divided {
+    margin-top: 5px;
+    border-top: 1px solid #e8eaec;
+}
+
+.trade-select-item-divided:before {
+    content: '';
+    height: 5px;
+    display: block;
+    margin: 0 -16px;
+    background-color: #fff;
+    position: relative;
+    top: -7px;
+}
+
+.trade-select-large .trade-select-item {
+    padding: 7px 16px 8px;
+    font-size: 14px !important;
+}
+
+@-moz-document url-prefix() {
+    .trade-select-item {
+        white-space: normal;
+    }
+}
+
+.trade-select-multiple .trade-select-item {
+    position: relative;
+}
+
+.trade-select-multiple .trade-select-item-selected {
+    color: rgba(45, 140, 240, .9);
+    background: #fff;
+}
+
+.trade-select-multiple .trade-select-item-focus, .trade-select-multiple .trade-select-item-selected:hover {
+    background: #f3f3f3;
+}
+
+.trade-select-multiple .trade-select-item-selected.trade-select-multiple .trade-select-item-focus {
+    color: rgba(40, 123, 211, .91);
+    background: #fff
+}
+
+.trade-select-multiple .trade-select-item-selected:after {
+    display: inline-block;
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 24px;
+    content: '\F171';
+    color: rgba(45, 140, 240, .9);
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+
+.trade-select-group {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.trade-select-group-title {
+    padding-left: 8px;
+    font-size: 12px;
+    color: #999;
+    height: 30px;
+    line-height: 30px
+}
+
+.trade-form-item-error .trade-select-selection {
+    border: 1px solid #ed4014;
+}
+
+.trade-form-item-error .trade-select-arrow {
+    color: #ed4014;
+}
+
+.trade-form-item-error .trade-select-visible .trade-select-selection {
+    border-color: #ed4014;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(237, 64, 20, .2)
+}
+
+.trade-select-dropdown {
+    width: inherit;
+    max-height: 200px;
+    overflow: auto;
+    margin: 5px 0;
+    padding: 5px 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    position: absolute;
+    z-index: 900;
+}
+
+.trade-select-dropdown-transfer {
+    z-index: 2060;
+    width: auto;
+}
+
+.trade-select-dropdown.trade-transfer-no-max-height {
+    max-height: none;
+}
+
+.trade-modal .trade-select-dropdown {
+    position: absolute !important
+}

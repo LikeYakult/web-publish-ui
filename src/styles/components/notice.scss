@@ -1,0 +1,120 @@
+.trade-notice {
+    width: 335px;
+    margin-right: 24px;
+    position: fixed;
+    z-index: 1010;
+}
+
+.trade-notice-content-with-icon {
+    margin-left: 51px
+}
+
+.trade-notice-with-desc.trade-notice-with-icon .trade-notice-title {
+    margin-left: 51px
+}
+
+.trade-notice-notice {
+    margin-bottom: 10px;
+    padding: 16px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    background: #fff;
+    line-height: 1;
+    position: relative;
+    overflow: hidden;
+    @include noticeBorderLeft;
+}
+
+.trade-notice-notice-close {
+    position: absolute;
+    right: 8px;
+    top: 15px;
+    color: #999;
+    outline: 0
+}
+
+.trade-notice-notice-close i {
+    color: #999;
+    transition: color .2s ease;
+    position: relative;
+    right: 4px;
+}
+
+.trade-notice-notice-close i:hover {
+    color: #444
+}
+
+.trade-notice-notice-content-with-render .trade-notice-desc {
+    display: none
+}
+
+.trade-notice-notice-with-desc .trade-notice-notice-close {
+    top: 11px
+}
+
+.trade-notice-content-with-render-notitle {
+    margin-left: 26px
+}
+
+.trade-notice-title {
+    font-size: 16px;
+    line-height: 17px;
+    color: #17233d;
+    padding-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.trade-notice-with-desc .trade-notice-title {
+    font-weight: 700;
+    margin-bottom: 8px
+}
+
+.trade-notice-desc {
+    font-size: 14px;
+    color: #515a6e;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 16px;
+}
+
+.trade-notice-with-desc.trade-notice-with-icon .trade-notice-desc {
+    margin-left: 51px
+}
+
+.trade-notice-with-icon .trade-notice-title {
+    margin-left: 26px
+}
+
+.trade-notice-icon {
+    position: absolute;
+    top: 2px;
+    font-size: 16px
+}
+
+.trade-notice-icon-success {
+    color: #19be6b
+}
+
+.trade-notice-icon-info {
+    color: #2d8cf0
+}
+
+.trade-notice-icon-warning {
+    color: #f90
+}
+
+.trade-notice-icon-error {
+    color: #ed4014
+}
+
+.trade-notice-with-desc .trade-notice-icon {
+    font-size: 36px;
+    top: -6px
+}
+
+.trade-notice-custom-content {
+    position: relative
+}

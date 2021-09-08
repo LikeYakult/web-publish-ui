@@ -1,0 +1,58 @@
+.trading-wrap {
+    position: relative;
+    @include pavedBox;
+    .trading-container {
+        width: 100%;
+        height: calc(100% - 30px);
+        &.active {
+            height: calc(100%);
+        }
+        .trading-header {
+            padding: 8px 12px;
+            @include flexAlignItemsCenter;
+            @include backgroundDeppThemeStyles;
+            @include headerIntervalHeader;
+            i {
+                cursor: pointer;
+                @include tvIntervalBtn;
+                position: relative;
+                top: 1px;
+            }
+            .left {
+                button {
+                    cursor: pointer;
+                    padding: 6px 8px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    position: relative;
+                    margin-right: 8px;
+                    border: 0;
+                    outline: none;
+                    @include tvIntervalBtn;
+                    &.active {
+                        @include tvIntervalBtnActive;
+                    }
+                    &:hover {
+                        @include tvIntervalBtnActive;
+                    }
+                }
+                .chart-deals{
+                    display: inline-block;
+                    margin-left: 15px;
+                }
+            }
+            .right {
+                margin-left: auto;
+            }
+        }
+        .trading-chart {
+            width: 100%;
+            height: calc(100% - 47px);
+            position: relative;
+            .trading-content {
+                @include pavedBox;
+            }
+            @include backgroundThemeTradingChartStyles;
+        }
+    }
+}

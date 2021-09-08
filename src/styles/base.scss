@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    &.stock {
+        body {
+            height: 100%;
+            #app {
+                height: 100%;
+            }
+        }
+    }
+    body {
+        &.overflow-hidden {
+            overflow: hidden;
+        }
+        #app {
+            position: relative;
+        }
+    }
+}
+
+body {
+    @include backgroundThemeStyles;
+    @include webkitScrollStyle;
+    user-select:none;
+    font-family: 'Source' !important;
+    ol, ul, dl {
+        margin-bottom: 0;
+    }
+}
+
+button, a, input {
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-loading {
+    display: inline-block;
+    animation: LoadingLoad 2400ms infinite ease-in-out;
+}
+
+.up {
+    color: $up-color !important;
+}
+
+.down {
+    color: $down-color !important;
+}
+
+.error {
+    color: $error-color !important;
+}
+
+.success {
+    color: $success-color !important;
+}
+
+.pending-cls {
+    color: $subsidiary-color !important;
+}
+
+.info-cls {
+    color: $info-color !important;
+}
+
+.trade-border-error {
+    border: 1px $error-color solid !important;
+}
+
+.green-border {
+    position: relative;
+    > div {
+        z-index: 20 !important;
+        color: $down-color;
+    }
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 10;
+        border: 1px $down-color solid;
+        @include MarketGLintBgGreen;
+    }
+}
+
+.red-border {
+    position: relative;
+    > div {
+        z-index: 20 !important;
+        color: $up-color;
+    }
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 10;
+        border: 1px $up-color solid;
+        @include MarketGLintBgRed;
+    }
+}
+
+
+.red-market{
+    @include MarketGLintBgRed;
+}
+.green-market{
+    @include MarketGLintBgGreen;
+}
+.green-background {
+    position: relative;
+    > div {
+        z-index: 20;
+    }
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 10;
+        @include MarketGLintBackGreen;
+    }
+}
+
+.red-background {
+    position: relative;
+    > div {
+        z-index: 20;
+    }
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 10;
+        @include MarketGLintBackRed;
+    }
+}
+
+.vue-grid-layout .vue-grid-item {
+    border-radius: 4px;
+    overflow: hidden;
+    @include backgroundThemeLayoutStyles;
+    .vue-resizable-handle {
+        @include layoutResizableHandle;
+    }
+}
+
+.basefont-style {
+    font-family: 'Source' !important;
+}
+
+// 弹框底部隐藏
+.modal-cancel-hide .trade-modal-footer{
+    display: none !important;
+}

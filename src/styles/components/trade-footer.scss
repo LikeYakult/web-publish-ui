@@ -1,0 +1,67 @@
+.trade-footer {
+    @include backgroundDeppThemeStyles;
+    padding: 200px 0 100px;
+    .trade-footer-container {
+        width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        @include flexAlignItemsCenter;
+        .footer-left {
+            @include flexAlignItemsCenter;
+            .qrcode {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include baseFontColorThemeStyles;
+                .top {
+                    font-size: 24px;
+                    margin-bottom: 0;
+                }
+                .middle {
+                    margin: 12px 0;
+                }
+            }
+            .info {
+                margin-left: 100px;
+                .info-item {
+                    @include baseFontColorThemeStyles;
+                    font-size: $font-size-large;
+                    margin-bottom: 16px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .footer-right {
+            margin-left: auto;
+            display: flex;
+            .footer-right-item {
+                @include baseFontColorThemeStyles;
+                margin-right: 60px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                .title {
+                    margin-bottom: 16px;
+                    font-size: $font-size-base;
+                    @include tradeBottomAssets;
+                }
+                .links {
+                    cursor: pointer;
+                    font-size: $font-size-small;
+                    margin-bottom: 10px;
+                    a {
+                        @include baseFontColorThemeStyles;
+                        &:hover {
+                            @include linkHoverColor;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

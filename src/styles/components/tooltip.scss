@@ -1,0 +1,292 @@
+.trade-tooltip {
+    display: inline-block
+}
+
+.trade-tooltip-rel {
+    display: inline-block;
+    position: relative;
+    width: inherit
+}
+
+.trade-tooltip-popper {
+    display: block;
+    visibility: visible;
+    font-size: 12px;
+    line-height: 1.5;
+    position: absolute;
+    z-index: 1060
+}
+
+.trade-tooltip-popper[x-placement^=top] {
+    padding: 5px 0 8px 0
+}
+
+.trade-tooltip-popper[x-placement^=right] {
+    padding: 0 5px 0 8px
+}
+
+.trade-tooltip-popper[x-placement^=bottom] {
+    padding: 8px 0 5px 0
+}
+
+.trade-tooltip-popper[x-placement^=left] {
+    padding: 0 8px 0 5px
+}
+
+.trade-tooltip-popper[x-placement^=top] .trade-tooltip-arrow {
+    bottom: 3px;
+    border-width: 5px 5px 0;
+    @include tipsBackgroundArrowTop;
+}
+
+.trade-tooltip-popper[x-placement=top] .trade-tooltip-arrow {
+    left: 50%;
+    margin-left: -5px
+}
+
+.trade-tooltip-popper[x-placement=top-start] .trade-tooltip-arrow {
+    left: 16px
+}
+
+.trade-tooltip-popper[x-placement=top-end] .trade-tooltip-arrow {
+    right: 16px
+}
+
+.trade-tooltip-popper[x-placement^=right] .trade-tooltip-arrow {
+    left: 3px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: rgba(70, 76, 91, .9)
+}
+
+.trade-tooltip-popper[x-placement=right] .trade-tooltip-arrow {
+    top: 50%;
+    margin-top: -5px
+}
+
+.trade-tooltip-popper[x-placement=right-start] .trade-tooltip-arrow {
+    top: 8px
+}
+
+.trade-tooltip-popper[x-placement=right-end] .trade-tooltip-arrow {
+    bottom: 8px
+}
+
+.trade-tooltip-popper[x-placement^=left] .trade-tooltip-arrow {
+    right: 3px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: rgba(70, 76, 91, .9)
+}
+
+.trade-tooltip-popper[x-placement=left] .trade-tooltip-arrow {
+    top: 50%;
+    margin-top: -5px
+}
+
+.trade-tooltip-popper[x-placement=left-start] .trade-tooltip-arrow {
+    top: 8px
+}
+
+.trade-tooltip-popper[x-placement=left-end] .trade-tooltip-arrow {
+    bottom: 8px
+}
+
+.trade-tooltip-popper[x-placement^=bottom] .trade-tooltip-arrow {
+    top: 3px;
+    border-width: 0 5px 5px;
+    @include tipsBackgroundArrowBottom;
+}
+
+.trade-tooltip-popper[x-placement=bottom] .trade-tooltip-arrow {
+    left: 50%;
+    margin-left: -5px
+}
+
+.trade-tooltip-popper[x-placement=bottom-start] .trade-tooltip-arrow {
+    left: 16px
+}
+
+.trade-tooltip-popper[x-placement=bottom-end] .trade-tooltip-arrow {
+    right: 16px
+}
+
+.trade-tooltip-light.trade-tooltip-popper {
+    display: block;
+    visibility: visible;
+    font-size: 12px;
+    line-height: 1.5;
+    position: absolute;
+    z-index: 1060
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement^=top] {
+    padding: 7px 0 10px 0
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement^=right] {
+    padding: 0 7px 0 10px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement^=bottom] {
+    padding: 10px 0 7px 0
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement^=left] {
+    padding: 0 10px 0 7px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement^=top] .trade-tooltip-arrow {
+    bottom: 3px;
+    border-width: 7px 7px 0;
+    border-top-color: rgba(217, 217, 217, .5)
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement=top] .trade-tooltip-arrow {
+    left: 50%;
+    margin-left: -7px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement=top-start] .trade-tooltip-arrow {
+    left: 16px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement=top-end] .trade-tooltip-arrow {
+    right: 16px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement^=right] .trade-tooltip-arrow {
+    left: 3px;
+    border-width: 7px 7px 7px 0;
+    border-right-color: rgba(217, 217, 217, .5)
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement=right] .trade-tooltip-arrow {
+    top: 50%;
+    margin-top: -7px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement=right-start] .trade-tooltip-arrow {
+    top: 8px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement=right-end] .trade-tooltip-arrow {
+    bottom: 8px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement^=left] .trade-tooltip-arrow {
+    right: 3px;
+    border-width: 7px 0 7px 7px;
+    border-left-color: rgba(217, 217, 217, .5)
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement=left] .trade-tooltip-arrow {
+    top: 50%;
+    margin-top: -7px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement=left-start] .trade-tooltip-arrow {
+    top: 8px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement=left-end] .trade-tooltip-arrow {
+    bottom: 8px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement^=bottom] .trade-tooltip-arrow {
+    top: 3px;
+    border-width: 0 7px 7px;
+    border-bottom-color: rgba(217, 217, 217, .5)
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement=bottom] .trade-tooltip-arrow {
+    left: 50%;
+    margin-left: -7px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement=bottom-start] .trade-tooltip-arrow {
+    left: 16px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement=bottom-end] .trade-tooltip-arrow {
+    right: 16px
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement^=top] .trade-tooltip-arrow:after {
+    content: " ";
+    bottom: 1px;
+    margin-left: -7px;
+    border-bottom-width: 0;
+    border-top-width: 7px;
+    border-top-color: #fff
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement^=right] .trade-tooltip-arrow:after {
+    content: " ";
+    left: 1px;
+    bottom: -7px;
+    border-left-width: 0;
+    border-right-width: 7px;
+    border-right-color: #fff
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement^=bottom] .trade-tooltip-arrow:after {
+    content: " ";
+    top: 1px;
+    margin-left: -7px;
+    border-top-width: 0;
+    border-bottom-width: 7px;
+    border-bottom-color: #fff
+}
+
+.trade-tooltip-light.trade-tooltip-popper[x-placement^=left] .trade-tooltip-arrow:after {
+    content: " ";
+    right: 1px;
+    border-right-width: 0;
+    border-left-width: 7px;
+    border-left-color: #fff;
+    bottom: -7px
+}
+
+.trade-tooltip-inner {
+    max-width: 250px;
+    min-height: 34px;
+    padding: 8px 12px;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    background-color: rgba(70, 76, 91, .9);
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+}
+
+.trade-tooltip-inner-with-width {
+    white-space: pre-wrap;
+    text-align: justify
+}
+
+.trade-tooltip-light .trade-tooltip-inner {
+    background-color: #fff;
+    color: #515a6e
+}
+
+.trade-tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid
+}
+
+.trade-tooltip-light .trade-tooltip-arrow {
+    border-width: 8px
+}
+
+.trade-tooltip-light .trade-tooltip-arrow:after {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-color: transparent;
+    border-style: solid;
+    content: "";
+    border-width: 7px
+}

@@ -1,0 +1,17 @@
+.notification-message-wrap {
+    .title {
+        font-size: $font-size-medium;
+        font-weight: bold;
+        @include flexAlignItemsCenter;
+    }
+}
+
+.notification-description-wrap {
+    margin-top: 10px;
+    .text {
+        p {
+            margin-bottom: 0;
+            font-size: $font-size-base;
+        }
+    }
+}

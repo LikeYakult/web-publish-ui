@@ -1,0 +1,264 @@
+$font-size-dark         : rgba(255, 255, 255, 0.85);
+$font-size-white        : rgba(0, 0, 0, 0.85);
+$top-nav-color          : rgba(255, 255, 255, 0.8);
+$white-active           : #fe9a00;
+$white-active45         : rgba(254, 154, 0, 0.45);
+$primary-color          : #1890FF;
+$info-color             : #6b6e75;
+$success-color          : #19be6b;
+$processing-color       : $primary-color;
+$warning-color          : #ff9900;
+$up-color               : #E75A5B;
+$down-color             : #38AF75;
+$dark-green-color       : #0d7680;
+$error-color            : #ed4014;
+$crimson-color          : #8f223a;
+$normal-color           : #e6ebf1;
+$link-color             : #2D8cF0;
+$tooltip-color          : #ffffff;
+$subsidiary-color       : #808695;
+$rate-star-color        : #f5a623;
+$hals-white-opacity85   : hsla(0, 0%, 100%, 0.85);
+$hals-white-opacity65   : hsla(0, 0%, 100%, 0.65);
+$hals-white-opacity55   : hsla(0, 0%, 100%, 0.55);
+$hals-white-opacity45   : hsla(0, 0%, 100%, 0.45);
+$hals-white-opacity35   : hsla(0, 0%, 100%, 0.35);
+$hals-white-opacity25   : hsla(0, 0%, 100%, 0.25);
+$black-opacity85        : rgba(0, 0, 0, 0.85);
+$black-opacity75        : rgba(0, 0, 0, 0.75);
+$black-opacity65        : rgba(0, 0, 0, 0.65);
+$black-opacity55        : rgba(0, 0, 0, 0.55);
+$black-opacity45        : rgba(0, 0, 0, 0.45);
+$black-opacity15        : rgba(0, 0, 0, 0.15);
+$small-title-color      : #333333;
+$small-text-color       : #666666;
+$gray-text-color        : #999999;
+$white                  : #ffffff;
+$black                  : #000000;
+$gLint-white-red        : #ffc8c8;
+$gLint-white-green      : #c4eed0;
+
+
+$search-icon-dark       : #505b66;
+$search-icon-white      : #9ca4af;
+$tips-active-bg         : #91d5ff;
+$tips-white-background  : #fff;
+$tips-dark-background   : #111d2f;
+$top-nav-background     : #2c2c2c;
+$body-background        : #ffffff;
+$item-background-base   : #e6f7ff;
+$main-background        : #F0F2F5;
+$item-background        : #E6F7FF;
+$component-background   : #ffffff;
+$modal-close-background : rgba(255, 255, 255, 0.15);
+$font-family            : "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+$code-family            : Consolas,Menlo,Courier,monospace;
+$title-color            : #17233d;
+$text-color             : #515a6e;
+$font-size-big          : 24px;
+$font-size-title        : 22px;
+$font-size-medium       : 18px;
+$font-size-large        : 16px;
+$font-size-base         : 14px;
+$font-size-small        : 12px;
+$line-height-base       : 1.5;
+$border-radius-base     : 6px;
+$border-radius-small    : 4px;
+$cursor-disabled        : not-allowed;
+
+
+$padding-lg: 24px;
+$padding-md: 16px;
+$padding-sm: 12px;
+$padding-xs: 8px;
+
+$border-base-color      : hsla(0, 0%, 100%, 0.08);
+$block-border-dark      : rgba(255 ,255, 255, 0.12);
+$block-border-white     : rgba(0 ,0, 0, 0.12);
+$border-tab-color-dark  : #101924;
+$border-tab-color-white : #f4e8d8;
+$border-pop-base        : #f0f0f0;
+$border-color-base      : #dcdee2;
+$border-color-split     : #e8eaec;
+$border-width-base      : 1px;
+$border-style-base      : solid;
+$border-img-base        : #d8d8d8;
+$border-icon-base       : #e9e9e9;
+$border-color-dark      : #171c2c;
+$border-color-white     : #dfe2e6;
+
+$background-color-dark-deep   : #152130;
+$background-color-dark        : #1d2734;
+$background-color-white-deep  : #f9f3eb;
+$background-color-white       : #fffbf6;
+$background-color-select-hover: #f3f3f3;
+$background-color-dark-menu   : rgba(0, 0, 0, 0.05);
+$tooltip-bg                   : rgba(70, 76, 91, .9);
+$head-bg                      : #f9fafc;
+$table-thead-bg               : #f8f8f9;
+$table-td-stripe-bg           : #f8f8f9;
+$table-td-hover-bg            : #ebf7ff;
+$table-td-highlight-bg        : #ebf7ff;
+$menu-dark-title              : #515a6e;
+$menu-dark-active-bg          : #363e4f;
+$menu-dark-subsidiary-color   : rgba(255,255,255,.7);
+$menu-dark-group-title-color  : rgba(255,255,255,.36);
+$date-picker-cell-hover-bg    : #e1f0fe;
+$background-layout-dark       : rgba(255,255,255,.3);
+$background-layout-white      : rgba(0,0,0,.3);
+$background-trading-chart-dark: #152130;
+
+$shadow-color           : rgba(0, 0, 0, .2);
+$shadow-base            : 0 1px 6px $shadow-color;
+$shadow-card            : 0 1px 1px 0 rgba(0,0,0,.1);
+$shadow-up              : 0 -1px 6px $shadow-color;
+$shadow-down            : 0 1px 6px $shadow-color;
+$shadow-left            : -1px 0 6px $shadow-color;
+$shadow-right           : 1px 0 6px $shadow-color;
+
+$btn-font-weight        : normal;
+$btn-padding-base       : 5px 15px 6px;
+$btn-padding-large      : 6px 15px 6px 15px;
+$btn-padding-small      : 1px 7px 2px;
+$btn-padding-base-icon  : 5px 15px 6px;
+$btn-padding-large-icon : 6px 15px 6px 15px;
+$btn-padding-small-icon : 1px 7px 2px;
+$btn-font-size          : 12px;
+$btn-font-size-large    : 14px;
+$btn-border-radius      : 4px;
+$btn-border-radius-small: 3px;
+
+$btn-disable-color-dark : rgba(145, 156, 164, 0.45);
+$btn-disable-color-white: rgba(145, 156, 164, 0.45);
+$btn-disable-bg         : $background-color-dark;
+$btn-disable-border     : $border-color-base;
+
+$btn-add-color          : #1890FF;
+$btn-edit-color         : #4ECB74;
+$btn-delete-color       : #F2637B;
+$btn-import-color       : #FBD437;
+$btn-log-color          : #975FE5;
+
+$btn-default-color      : $text-color;
+$btn-default-bg         : #fff;
+$btn-default-border     : $border-color-base;
+
+$btn-primary-color      : #fff;
+$btn-primary-bg         : $primary-color;
+
+$btn-ghost-color        : $text-color;
+$btn-ghost-bg           : #fff;
+$btn-ghost-border       : $border-color-base;
+
+$btn-circle-size        : 32px;
+$btn-circle-size-large  : 36px;
+$btn-circle-size-small  : 24px;
+
+$grid-columns                : 24;
+$grid-gutter-width           : 0;
+$layout-body-background      : #f5f7f9;
+$layout-header-background    : #515a6e;
+$layout-header-height        : 64px;
+$layout-header-padding       : 0 50px;
+$layout-footer-padding       : 24px 50px;
+$layout-footer-background    : $layout-body-background;
+$layout-sider-background     : $layout-header-background;
+$layout-trigger-height       : 48px;
+$layout-trigger-color        : #fff;
+$layout-zero-trigger-width   : 36px;
+$layout-zero-trigger-height  : 42px;
+
+$legend-color           : #999;
+
+$input-height-base           : 32px;
+$input-height-large          : 36px;
+$input-height-small          : 24px;
+
+$input-padding-horizontal    : 7px;
+$input-padding-vertical-base : 4px;
+$input-padding-vertical-small: 1px;
+$input-padding-vertical-large: 6px;
+
+$input-place-color-dark      : $btn-disable-color-dark;
+$input-place-color-white     : $btn-disable-color-white;
+$input-color                 : $text-color;
+$input-border-color          : $border-color-base;
+$input-bg                    : #fff;
+$input-group-bg              : #f8f8f9;
+
+$input-hover-border-color    : $primary-color;
+$input-focus-border-color    : $primary-color;
+$input-disabled-bg           : #f3f3f3;
+
+$tag-font-size          : 12px;
+
+$screen-xs              : 480px;
+$screen-xs-min          : $screen-xs;
+$screen-xs-max          : ($screen-xs-min - 1);
+
+$screen-sm              : 576px;
+$screen-sm-min          : $screen-sm;
+$screen-sm-max          : ($screen-sm-min - 1);
+
+$screen-md              : 768px;
+$screen-md-min          : $screen-md;
+$screen-md-max          : ($screen-md-min - 1);
+
+$screen-lg              : 992px;
+$screen-lg-min          : $screen-lg;
+$screen-lg-max          : ($screen-lg-min - 1);
+
+$screen-xl              : 1200px;
+$screen-xl-min          : $screen-xl;
+$screen-xl-max          : ($screen-xl-min - 1);
+
+$screen-xxl             : 1600px;
+$screen-xxl-min         : $screen-xxl;
+$screen-xxl-max         : ($screen-xxl-min - 1);
+
+$zindex-spin            : 8;
+$zindex-affix           : 10;
+$zindex-back-top        : 10;
+$zindex-select          : 900;
+$zindex-modal           : 1000;
+$zindex-drawer          : 1000;
+$zindex-message         : 1010;
+$zindex-notification    : 1010;
+$zindex-tooltip         : 1060;
+$zindex-transfer        : 1060;
+$zindex-loading-bar     : 2000;
+$zindex-spin-fullscreen : 2010;
+
+$animation-time         : .3s;
+$animation-time-quick   : .15s;
+$transition-time        : .2s;
+$ease-in-out            : ease-in-out;
+
+$slider-height             : 4px;
+$slider-margin             : 16px 0;
+$slider-button-wrap-size   : 18px;
+$slider-button-wrap-offset : -4px;
+$slider-disabled-color     : #ccc;
+
+
+$avatar-size-base: 32px;
+$avatar-size-lg: 40px;
+$avatar-size-sm: 24px;
+$avatar-font-size-base: 18px;
+$avatar-font-size-lg: 24px;
+$avatar-font-size-sm: 14px;
+$avatar-bg: #ccc;
+$avatar-color: #fff;
+$avatar-border-radius: $border-radius-small;
+
+$anchor-border-width: 2px;
+
+
+$list-header-background: transparent;
+$list-footer-background: transparent;
+$list-empty-text-padding: $padding-md;
+$list-item-padding: $padding-sm 0;
+$list-item-meta-margin-bottom: $padding-md;
+$list-item-meta-avatar-margin-right: $padding-md;
+$list-item-meta-title-margin-bottom: $padding-sm;
+

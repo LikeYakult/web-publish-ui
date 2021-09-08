@@ -1,0 +1,720 @@
+@mixin flexAlignItemsCenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexJustifyCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexJustifyEnd {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin paddingBothSlides16 {
+    padding: 0 16px;
+}
+
+@mixin marginLeft {
+    margin-left: auto;
+}
+
+@mixin pavedBox {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin paddingTopNav {
+    padding-top: 48px;
+}
+
+@mixin activeHeaderBase {
+    &:after {
+        content: " ";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    [data-theme="dark"] & {
+        color: $primary-color;
+        &:after {
+            background: $primary-color;
+        }
+    }
+
+    [data-theme="white"] & {
+        color: $white-active;
+        &:after {
+            background: $white-active;
+        }
+    }
+}
+
+@mixin activeHeaderBaseBottom {
+    &:after {
+        content: " ";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+    [data-theme="dark"] & {
+        color: $primary-color;
+        &:after {
+            background: $primary-color;
+        }
+    }
+
+    [data-theme="white"] & {
+        color: $white-active;
+        &:after {
+            background: $white-active;
+        }
+    }
+}
+
+@mixin afterBottomActive {
+    [data-theme="dark"] & {
+        background: $primary-color;
+    }
+
+    [data-theme="white"] & {
+        background: $white-active;
+    }
+}
+
+@mixin borderNavBottomStyles {
+    [data-theme="dark"] & {
+        border-bottom: $border-color-dark 1px solid;
+    }
+
+    [data-theme="white"] & {
+        border-bottom: $border-color-white 1px solid;
+    }
+}
+
+@mixin backgroundThemeStyles {
+    [data-theme="dark"] & {
+        background: $background-color-dark;
+    }
+
+    [data-theme="white"] & {
+        background: $background-color-white;
+    }
+}
+
+@mixin backgroundDeppThemeStyles {
+    [data-theme="dark"] & {
+        background: $background-color-dark-deep;
+    }
+
+    [data-theme="white"] & {
+        background: $background-color-white-deep;
+    }
+}
+
+@mixin borderBottomBase {
+    [data-theme="dark"] & {
+        border-bottom: 1px $background-color-dark solid;
+    }
+
+    [data-theme="white"] & {
+        border-bottom: 1px $background-color-white solid;
+    }
+}
+
+@mixin borderTopBase {
+    [data-theme="dark"] & {
+        border-top: 1px $background-color-dark solid;
+    }
+
+    [data-theme="white"] & {
+        border-top: 1px $background-color-white solid;
+    }
+}
+
+@mixin borderBottomActive {
+    [data-theme="dark"] & {
+        border-bottom: 1px $primary-color solid;
+    }
+
+    [data-theme="white"] & {
+        border-bottom: 1px $white-active solid;
+    }
+}
+
+@mixin borderLeftLight {
+    [data-theme="dark"] & {
+        border-left: 1px rgba(255, 255, 255, 0.12) solid;
+    }
+
+    [data-theme="white"] & {
+        border-left: 1px rgba(0, 0, 0, 0.06) solid;
+    }
+}
+
+@mixin borderBottomLight {
+    [data-theme="dark"] & {
+        border-bottom: 1px rgba(255, 255, 255, 0.12) solid;
+    }
+
+    [data-theme="white"] & {
+        border-bottom: 1px rgba(0, 0, 0, 0.06) solid;
+    }
+}
+
+@mixin backgroundLight {
+    [data-theme="dark"] & {
+        background: rgba(255, 255, 255, 0.12);
+    }
+
+    [data-theme="white"] & {
+        background: rgba(0, 0, 0, 0.06);
+    }
+}
+
+@mixin baseFontColorThemeStyles {
+    [data-theme="dark"] & {
+        color: $font-size-dark;
+    }
+
+    [data-theme="white"] & {
+        color: $font-size-white;
+    }
+}
+
+@mixin titleFontColor {
+    [data-theme="dark"] & {
+        color: $font-size-dark;
+    }
+
+    [data-theme="white"] & {
+        color: rgba(6, 9, 29, 0.85);
+    }
+}
+
+@mixin textFontColor {
+    [data-theme="dark"] & {
+        color: $font-size-dark;
+    }
+
+    [data-theme="white"] & {
+        color: $font-size-white;
+    }
+}
+
+@mixin tipsBackgroundArrowTop {
+    [data-theme="dark"] & {
+        border-top-color: $tips-dark-background;
+    }
+
+    [data-theme="white"] & {
+        border-top-color: $white-active;
+    }
+}
+
+@mixin tipsBackgroundArrowBottom {
+    [data-theme="dark"] & {
+        border-bottom-color: $tips-dark-background;
+    }
+
+    [data-theme="white"] & {
+        border-bottom-color: $white-active;
+    }
+}
+
+@mixin tipsBackground {
+    [data-theme="dark"] & {
+        background: $tips-dark-background;
+    }
+
+    [data-theme="white"] & {
+        background: $tips-white-background;
+        box-shadow: 0 1px 2px 0 $white-active;
+    }
+}
+
+@mixin headerIntervalHeader {
+    [data-theme="dark"] & {
+        border-top: 1px $background-color-dark solid;
+    }
+
+    [data-theme="white"] & {
+        color: $black-opacity75;
+        border-top: 1px $background-color-white solid;
+    }
+}
+
+@mixin layoutBottomBorder {
+    [data-theme="dark"] & {
+        border-bottom: 1px $background-color-dark solid;
+    }
+
+    [data-theme="white"] & {
+        color: $black-opacity75;
+        border-bottom: 1px $background-color-white solid;
+    }
+}
+
+@mixin tvIntervalBtn {
+    [data-theme="dark"] & {
+        color: $hals-white-opacity55;
+        background: transparent;
+    }
+
+    [data-theme="white"] & {
+        color: $black-opacity85;
+        background: transparent;
+    }
+}
+
+@mixin tvIntervalBtnActive {
+    [data-theme="dark"] & {
+        color: $white-active;
+    }
+
+    [data-theme="white"] & {
+        background: #ffedd8;
+        color: $white-active;
+    }
+}
+
+@mixin searchIconColor {
+    [data-theme="dark"] & {
+        color: $search-icon-dark;
+    }
+
+    [data-theme="white"] & {
+        color: $search-icon-white;
+    }
+}
+
+@mixin searchPlaceholder {
+    [data-theme="dark"] & {
+        color: $input-place-color-dark;
+    }
+
+    [data-theme="white"] & {
+        color: $input-place-color-white;
+    }
+}
+
+@mixin searchOrTitleColor {
+    [data-theme="dark"] & {
+        color: $hals-white-opacity85;
+    }
+
+    [data-theme="white"] & {
+        color: $black-opacity85;
+    }
+}
+
+@mixin marketTabBorderColor {
+    [data-theme="dark"] & {
+        border-right: 1px $border-tab-color-dark solid;
+    }
+
+    [data-theme="white"] & {
+        border-right: 1px $border-tab-color-white solid;
+    }
+}
+
+@mixin favoriteColor {
+    [data-theme="dark"] & {
+        color: #505b66;
+    }
+
+    [data-theme="white"] & {
+        color: #d5dae0;
+    }
+}
+
+@mixin marketDetailsHeadBorder {
+    [data-theme="dark"] & {
+        border-top: 1px #131e2c solid;
+    }
+
+    [data-theme="white"] & {
+        border-top: 1px #dfe2e6 solid;
+    }
+}
+
+@mixin arrowSortStyles {
+    [data-theme="dark"] & {
+        color: #505b66;
+    }
+
+    [data-theme="white"] & {
+        color: #6f7981;
+    }
+}
+
+@mixin panelCoinColor {
+    [data-theme="dark"] & {
+        color: $hals-white-opacity45;
+    }
+
+    [data-theme="white"] & {
+        color: rgba(37, 42, 68, 0.75);
+    }
+}
+
+@mixin panelRightHrColor {
+    [data-theme="dark"] & {
+        background: hsla(205, 9%, 61%, 0.1);
+    }
+
+    [data-theme="white"] & {
+        background: #dfe2e6;
+    }
+}
+
+@mixin markerColumnsHover {
+    [data-theme="dark"] & {
+        background: #23344a;
+    }
+
+    [data-theme="white"] & {
+        background: #fff5e9;
+    }
+}
+
+@mixin webkitScrollStyle {
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $black-opacity45;
+        border-radius: 2px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.3);
+    }
+}
+
+@mixin depthGapBarLeftBg {
+    [data-theme="dark"] & {
+        background: $up-color;
+    }
+
+    [data-theme="white"] & {
+        background: #8f223a;
+    }
+}
+
+@mixin depthGapBarRightBg {
+    [data-theme="dark"] & {
+        background: $down-color;
+    }
+
+    [data-theme="white"] & {
+        background: #0d7680;
+    }
+}
+
+@mixin tradeRedBtnBackground {
+    [data-theme="dark"] & {
+        background: $up-color;
+    }
+
+    [data-theme="white"] & {
+        background: #8f223a;
+    }
+}
+
+@mixin tradeGreenBtnBackground {
+    [data-theme="dark"] & {
+        background: #45a074;
+    }
+
+    [data-theme="white"] & {
+        background: #0d7680;
+    }
+}
+
+@mixin tradeSubmitGreenHover {
+    [data-theme="dark"] & {
+        background: #44c385;
+    }
+
+    [data-theme="white"] & {
+        background: #168c97;
+    }
+}
+
+@mixin tradeSubmitRedHover {
+    [data-theme="dark"] & {
+        background: #d6636a;
+    }
+
+    [data-theme="white"] & {
+        background: #be445f;
+    }
+}
+
+@mixin tradeLimitBorder {
+    [data-theme="dark"] & {
+        border: 1px $hals-white-opacity55 solid;
+    }
+
+    [data-theme="white"] & {
+        border: 1px $black-opacity55 solid;
+    }
+}
+
+@mixin btnBorderColor {
+    [data-theme="dark"] & {
+        border: 1px $btn-primary-bg solid;
+        color: $btn-primary-bg;
+    }
+
+    [data-theme="white"] & {
+        color: $white-active;
+        border: 1px solid $white-active;
+    }
+}
+
+@mixin baseHeaderColor {
+    [data-theme="dark"] & {
+        color: $hals-white-opacity45;
+    }
+
+    [data-theme="white"] & {
+        color: $black-opacity65;
+    }
+}
+
+@mixin baseBorder {
+    [data-theme="dark"] & {
+        color: $white;
+        border: 1px solid $hals-white-opacity25;
+    }
+
+    [data-theme="white"] & {
+        color: $black-opacity85;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+    }
+}
+
+@mixin borderDashedBottom {
+    [data-theme="dark"] & {
+        border-bottom: 1px dashed $primary-color;
+    }
+
+    [data-theme="white"] & {
+        border-bottom: 1px dashed $white-active;
+    }
+}
+
+@mixin baseBorderLeft {
+    [data-theme="dark"] & {
+        border-left: 1px solid $hals-white-opacity25;
+    }
+
+    [data-theme="white"] & {
+        border-left: 1px solid rgba(0, 0, 0, 0.12);
+    }
+}
+
+@mixin tradeBottomAssets {
+    [data-theme="dark"] & {
+        color: $hals-white-opacity35;
+    }
+
+    [data-theme="white"] & {
+        color: $black-opacity45;
+    }
+}
+
+@mixin navBottomBorder {
+    [data-theme="dark"] & {
+        border-bottom: 1px $black-opacity45 solid;
+    }
+
+    [data-theme="white"] & {
+        border-bottom: 1px $white-active45 solid;
+    }
+}
+
+@mixin blockBorder {
+    [data-theme="dark"] & {
+        border: 1px solid $block-border-dark;
+    }
+
+    [data-theme="white"] & {
+        border: 1px solid $block-border-white;
+    }
+}
+
+@mixin blockBorderBottom {
+    [data-theme="dark"] & {
+        border-bottom: 1px solid $block-border-dark;
+    }
+
+    [data-theme="white"] & {
+        border-bottom: 1px solid $block-border-white;
+    }
+}
+@mixin blockBorderRight {
+    [data-theme="dark"] & {
+        border-right: 1px solid $block-border-dark;
+    }
+
+    [data-theme="white"] & {
+        border-right: 1px solid $block-border-white;
+    }
+}
+@mixin blockBorderTop {
+    [data-theme="dark"] & {
+        border-top: 1px solid $block-border-dark;
+    }
+
+    [data-theme="white"] & {
+        border-top: 1px solid $block-border-white;
+    }
+}
+@mixin linkHoverColor {
+    [data-theme="dark"] & {
+        color: $primary-color;
+    }
+
+    [data-theme="white"] & {
+        color: $white-active;
+    }
+}
+@mixin marketTitleBg {
+    [data-theme="dark"] & {
+        background: #2f3946;
+    }
+
+    [data-theme="white"] & {
+        background: $background-color-white-deep;
+    }
+}
+@mixin userInfoBg {
+    [data-theme="dark"] & {
+        background: #1d2835;
+    }
+
+    [data-theme="white"] & {
+        background: #f3ebe0;
+    }
+}
+@mixin userInfoSmallFont {
+    [data-theme="dark"] & {
+        color: #9a9494;
+    }
+
+    [data-theme="white"] & {
+        color: #666;
+    }
+}
+
+@mixin noticeBorderLeft {
+    [data-theme="dark"] & {
+        border-left: $primary-color solid 3px;
+    }
+
+    [data-theme="white"] & {
+        border-left: $white-active solid 3px;
+    }
+}
+
+@mixin text-overflow-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin backgroundThemeLayoutStyles {
+    [data-theme="dark"] & {
+        background: $background-layout-dark;
+    }
+
+    [data-theme="white"] & {
+        background: $background-layout-white;
+    }
+}
+
+@mixin backgroundThemeTradingChartStyles {
+    [data-theme="dark"] & {
+        background: $background-trading-chart-dark;
+    }
+
+    [data-theme="white"] & {
+        background: $background-color-white-deep;
+    }
+}
+
+@mixin MarketGLintBgRed {
+    [data-theme="dark"] & {
+        background: $crimson-color;
+    }
+
+    [data-theme="white"] & {
+        background: $gLint-white-red;
+    }
+}
+
+@mixin MarketGLintBgGreen {
+    [data-theme="dark"] & {
+        background: $dark-green-color;
+    }
+
+    [data-theme="white"] & {
+        background: $gLint-white-green;
+    }
+}
+@mixin MarketGLintBackRed {
+    [data-theme="dark"] & {
+        background: linear-gradient(to right, rgba(143,34,58, 0.12) , $crimson-color) !important;
+    }
+
+    [data-theme="white"] & {
+        background: linear-gradient(to right, rgba(143,34,58, 0.12) ,  $gLint-white-red) !important;
+    }
+}
+
+@mixin MarketGLintBackGreen {
+    [data-theme="dark"] & {
+        background: linear-gradient(to right, rgba(13,118,128, 0.12) , $dark-green-color) !important;
+    }
+
+    [data-theme="white"] & {
+        background: linear-gradient(to right, rgba(13,118,128, 0.12) , $gLint-white-green) !important;
+    }
+}
+
+@mixin propertyFontColor {
+    [data-theme="dark"] & {
+        color: $white;
+    }
+
+    [data-theme="white"] & {
+        color: #424d5a
+    }
+}
+
+@mixin layoutResizableHandle {
+    [data-theme="dark"] & {
+        background: url(~@/assets/resizable_icon_light.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        z-index: 10;
+    }
+
+    [data-theme="white"] & {
+        background: url(~@/assets/resizable_icon_dark.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        z-index: 10;
+    }
+}

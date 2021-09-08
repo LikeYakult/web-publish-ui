@@ -1,0 +1,57 @@
+.lever-pop-confirm {
+    z-index: 12000 !important;
+    min-width: 360px;
+    .ant-popover-inner-content {
+        .ant-popover-message {
+            i.anticon {
+                display: none;
+            }
+            .ant-popover-message-title {
+                padding: 0;
+            }
+        }
+        .ant-popover-buttons {
+            display: none;
+        }
+    }
+    .lever-pop-confirm-container {
+        .radios {
+            span.ant-radio + * {
+                padding-left: 4px;
+                padding-right: 4px;
+            }
+        }
+        .prompt {
+            margin: 12px auto 0;
+            padding: 4px 8px;
+            max-width: 396px;
+            @include flexAlignItemsCenter;
+            justify-content: center;
+            @include btnBorderColor;
+            i.anticon {
+                display: inline-block;
+            }
+            span.text {
+                font-size: $font-size-small;
+                margin-left: 6px;
+            }
+        }
+        .btns {
+            margin-top: 12px;
+            text-align: right;
+            button {
+                cursor: pointer;
+            }
+            .btn-cancel {
+
+            }
+            .btn-ok {
+                margin-left: 24px;
+                color: $white;
+                border-radius: 2px;
+                padding: 4px 16px;
+                @include afterBottomActive;
+            }
+        }
+    }
+}

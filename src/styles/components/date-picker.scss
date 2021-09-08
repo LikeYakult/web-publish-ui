@@ -1,0 +1,487 @@
+.trade-date-picker {
+    display: inline-block;
+    line-height: normal
+}
+
+.trade-date-picker-rel {
+    position: relative;
+    .trade-date-picker-editor {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        vertical-align: middle;
+        height: 32px;
+        @include btnBorderColor;
+        input {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            padding: 0 8px;
+            font-size: $font-size-base;
+            border-radius: 4px;
+            background-image: none;
+            position: relative;
+            cursor: text;
+            outline: none;
+            @include linkHoverColor;
+            &::placeholder {
+                font-size: $font-size-small;
+            }
+        }
+    }
+}
+
+.trade-date-picker .trade-select-dropdown {
+    width: auto;
+    padding: 0;
+    overflow: visible;
+    max-height: none
+}
+
+.trade-date-picker-cells {
+    width: 196px;
+    margin: 10px;
+    white-space: normal
+}
+
+.trade-date-picker-cells span {
+    display: inline-block;
+    width: 24px;
+    height: 24px
+}
+
+.trade-date-picker-cells span em {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 2px;
+    font-style: normal;
+    border-radius: 3px;
+    text-align: center;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.trade-date-picker-cells-header span {
+    line-height: 24px;
+    text-align: center;
+    margin: 2px;
+    color: #c5c8ce
+}
+
+.trade-date-picker-cells-cell:hover em {
+    [data-theme="dark"] & {
+        background: #c5c8ce;
+    }
+
+    [data-theme="white"] & {
+        background: $white-active45;
+    }
+}
+
+.trade-date-picker-cells-focused em {
+    [data-theme="dark"] & {
+        box-shadow: 0 0 0 1px $primary-color inset;
+    }
+
+    [data-theme="white"] & {
+        box-shadow: 0 0 0 1px $white-active inset;
+    }
+}
+
+span.trade-date-picker-cells-cell {
+    width: 28px;
+    height: 28px;
+    cursor: pointer
+}
+
+.trade-date-picker-cells-cell-next-month em, .trade-date-picker-cells-cell-prev-month em {
+    color: #c5c8ce
+}
+
+.trade-date-picker-cells-cell-next-month:hover em, .trade-date-picker-cells-cell-prev-month:hover em {
+    background: 0 0
+}
+
+span.trade-date-picker-cells-cell-disabled, span.trade-date-picker-cells-cell-disabled:hover, span.trade-date-picker-cells-cell-week-label, span.trade-date-picker-cells-cell-week-label:hover {
+    cursor: not-allowed;
+    color: #c5c8ce
+}
+
+span.trade-date-picker-cells-cell-disabled em, span.trade-date-picker-cells-cell-disabled:hover em, span.trade-date-picker-cells-cell-week-label em, span.trade-date-picker-cells-cell-week-label:hover em {
+    color: inherit;
+    background: inherit
+}
+
+span.trade-date-picker-cells-cell-disabled, span.trade-date-picker-cells-cell-disabled:hover {
+    background: #f7f7f7
+}
+
+.trade-date-picker-cells-cell-today em {
+    position: relative
+}
+
+.trade-date-picker-cells-cell-today em:after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    @include afterBottomActive;
+}
+
+.trade-date-picker-cells-cell-range {
+    position: relative
+}
+
+.trade-date-picker-cells-cell-range em {
+    position: relative;
+    z-index: 1
+}
+
+.trade-date-picker-cells-cell-range:before {
+    content: '';
+    display: block;
+    background: #e1f0fe;
+    border-radius: 0;
+    border: 0;
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 0;
+    right: 0
+}
+
+.trade-date-picker-cells-cell-selected em, .trade-date-picker-cells-cell-selected:hover em {
+    background: #2d8cf0;
+    color: #fff
+}
+
+span.trade-date-picker-cells-cell-disabled.trade-date-picker-cells-cell-selected em {
+    color: #f7f7f7;
+    background: #c5c8ce;
+}
+
+.trade-date-picker-cells-cell-today.trade-date-picker-cells-cell-selected em:after {
+    background: #fff
+}
+
+.trade-date-picker-cells-show-week-numbers {
+    width: 226px
+}
+
+.trade-date-picker-cells-month, .trade-date-picker-cells-year {
+    margin-top: 14px
+}
+
+.trade-date-picker-cells-month span, .trade-date-picker-cells-year span {
+    width: 40px;
+    height: 28px;
+    line-height: 28px;
+    margin: 10px 12px;
+    border-radius: 3px
+}
+
+.trade-date-picker-cells-month span em, .trade-date-picker-cells-year span em {
+    width: 40px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0
+}
+
+.trade-date-picker-cells-month .trade-date-picker-cells-cell-focused, .trade-date-picker-cells-year .trade-date-picker-cells-cell-focused {
+    background-color: #d5e8fc
+}
+
+.trade-date-picker-header {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-bottom: 1px solid #e8eaec
+}
+
+.trade-date-picker-header-label {
+    cursor: pointer;
+    -webkit-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out
+}
+
+.trade-date-picker-header-label:hover {
+    color: #2d8cf0
+}
+
+.trade-date-picker-btn-pulse {
+    background-color: #d5e8fc !important;
+    border-radius: 4px;
+    -webkit-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out
+}
+
+.trade-date-picker-prev-btn {
+    float: left;
+    margin-left: 10px;
+    i {
+        cursor: pointer;
+        font-size: $font-size-small;
+    }
+}
+
+.trade-date-picker-prev-btn-arrow-double {
+    margin-left: 10px
+}
+
+
+.trade-date-picker-next-btn {
+    float: right;
+    margin-right: 10px;
+    i {
+        cursor: pointer;
+        font-size: $font-size-small;
+    }
+}
+
+.trade-date-picker-next-btn-arrow-double {
+    margin-right: 10px
+}
+
+
+.trade-date-picker-with-range .trade-picker-panel-body {
+    min-width: 432px
+}
+
+.trade-date-picker-with-range .trade-picker-panel-content {
+    float: left
+}
+
+.trade-date-picker-with-range .trade-picker-cells-show-week-numbers {
+    min-width: 492px
+}
+
+.trade-date-picker-with-week-numbers .trade-picker-panel-body-date {
+    min-width: 492px
+}
+
+.trade-date-picker-transfer {
+    z-index: 1060;
+    max-height: none;
+    width: auto
+}
+
+.trade-date-picker-focused input {
+    border-color: #57a3f3;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
+    box-shadow: 0 0 0 2px rgba(45, 140, 240, .2)
+}
+
+.trade-time-picker-header {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-bottom: 1px solid #e8eaec
+}
+
+.trade-time-picker-cells-cell:hover {
+    background: #f3f3f3
+}
+
+.trade-picker-panel-body-wrapper.trade-picker-panel-with-sidebar {
+    padding-left: 92px
+}
+
+.trade-time-picker-cells-cell-disabled {
+    color: #c5c8ce;
+    cursor: not-allowed
+}
+
+.trade-time-picker-cells-cell-disabled:hover {
+    color: #c5c8ce;
+    background-color: #fff;
+    cursor: not-allowed
+}
+
+.trade-time-picker-cells-cell-selected, .trade-time-picker-cells-cell-selected:hover {
+    color: #2d8cf0;
+    background: #f3f3f3
+}
+
+.trade-time-picker-cells-cell-focused {
+    background-color: #d5e8fc
+}
+
+.trade-time-picker-with-range .trade-time-picker-cells-list:first-child {
+    border-radius: 0
+}
+
+.trade-time-picker-with-range .trade-time-picker-cells-list:last-child {
+    border-radius: 0
+}
+
+.trade-time-picker-with-range.trade-time-picker-with-seconds .trade-picker-panel-body {
+    min-width: 340px
+}
+
+.trade-time-picker-cells-list {
+    width: 56px;
+    max-height: 144px;
+    float: left;
+    overflow: hidden;
+    border-left: 1px solid #e8eaec;
+    position: relative
+}
+
+.trade-time-picker-cells-list:hover {
+    overflow-y: auto
+}
+
+.trade-time-picker-cells-list:first-child {
+    border-left: none;
+    border-radius: 4px 0 0 4px
+}
+
+.trade-time-picker-cells-list:last-child {
+    border-radius: 0 4px 4px 0
+}
+
+.trade-time-picker-cells-list ul {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 120px 0;
+    list-style: none
+}
+
+
+.trade-picker-confirm {
+    border-top: 1px solid #e8eaec;
+    text-align: right;
+    padding: 8px;
+    clear: both;
+    .trade-picker-confirm-time {
+        color: #39f;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        float: left;
+        padding: 2px 0;
+        transition: all .2s ease-in-out;
+    }
+    .btn {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        white-space: nowrap;
+        line-height: 1.5;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 6px 15px;
+        font-size: 12px;
+        border-radius: 4px;
+        transform: translate3d(0,0,0);
+        transition: color .2s linear,background-color .2s linear,border .2s linear;
+        &.trade-picker-confirm-clear {
+            color: #657180;
+            background-color: transparent;
+            border-color: transparent;
+        }
+        &.trade-picker-confirm-ok {
+            color: #fff;
+            background-color: #39f;
+            border-color: #39f;
+        }
+    }
+}
+
+.trade-picker-confirm > span {
+    color: #2d8cf0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    float: left;
+    padding: 2px 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.trade-picker-confirm > span:hover {
+    color: #57a3f3
+}
+
+.trade-picker-confirm > span:active {
+    color: #2b85e4
+}
+
+.trade-picker-confirm-time {
+    float: left
+}
+
+.trade-time-picker-cells-list ul li {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 0 0 16px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    text-align: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    list-style: none;
+    -webkit-transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out
+}
+
+.trade-picker-panel-content .trade-picker-panel-content .trade-time-picker-cells {
+    min-width: 216px
+}
+
+.trade-picker-panel-content .trade-picker-panel-content .trade-time-picker-cells-with-seconds {
+    min-width: 216px
+}
+
+.trade-picker-panel-content .trade-picker-panel-content .trade-time-picker-cells-with-seconds .trade-time-picker-cells-list {
+    width: 72px
+}
+
+.trade-picker-panel-content .trade-picker-panel-content .trade-time-picker-cells-with-seconds .trade-time-picker-cells-list ul li {
+    padding: 0 0 0 28px
+}
+
+.trade-picker-panel-content .trade-picker-panel-content .trade-time-picker-cells-list {
+    width: 108px;
+    max-height: 216px
+}
+
+.trade-picker-panel-content .trade-picker-panel-content .trade-time-picker-cells-list:first-child {
+    border-radius: 0
+}
+
+.trade-picker-panel-content .trade-picker-panel-content .trade-time-picker-cells-list:last-child {
+    border-radius: 0
+}
+
+.trade-picker-panel-content .trade-picker-panel-content .trade-time-picker-cells-list ul {
+    padding: 0 0 192px 0
+}
+
+.trade-picker-panel-content .trade-picker-panel-content .trade-time-picker-cells-list ul li {
+    padding: 0 0 0 46px
+}

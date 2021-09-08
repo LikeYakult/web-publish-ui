@@ -1,0 +1,19 @@
+.trade-no-login {
+    @include pavedBox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ant-empty {
+        width: 100%;
+        cursor: pointer;
+        .ant-empty-image {
+            width: 100%;
+            svg {
+                width: 100%;
+            }
+        }
+        .ant-empty-description {
+            @include baseFontColorThemeStyles;
+        }
+    }
+}
