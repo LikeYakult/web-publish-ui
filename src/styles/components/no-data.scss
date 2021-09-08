@@ -1,10 +1,15 @@
-.trade-no-data {
-    height: 100%;
+.trade-no-login {
+    @include pavedBox;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    .ant-empty {
-        .ant-empty-description {
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        p {
+            margin-top: 8px;
             @include baseFontColorThemeStyles;
         }
     }

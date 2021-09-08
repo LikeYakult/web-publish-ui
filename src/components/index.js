@@ -11,6 +11,7 @@ import Tooltip from "./tooltip";
 import Page from "./page";
 import KlineLoading from "./kline-loading";
 import GlobalLoading from "./global-loading";
+import NoData from "./no-data";
 
 const components = {
     DatePicker,
@@ -27,7 +28,8 @@ const components = {
     Tooltip,
     Page,
     KlineLoading,
-    GlobalLoading
+    GlobalLoading,
+    NoData
 };
 
 const install = (vue) => {

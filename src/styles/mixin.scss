@@ -13,6 +13,16 @@
     justify-content: flex-end;
 }
 
+@mixin borderRightBase {
+    [data-theme="dark"] & {
+        border-right: 4px $background-color-dark solid;
+    }
+
+    [data-theme="white"] & {
+        border-right: 4px $background-color-white solid;
+    }
+}
+
 @mixin paddingBothSlides16 {
     padding: 0 16px;
 }
