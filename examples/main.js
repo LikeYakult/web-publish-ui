@@ -1,9 +1,10 @@
 import Vue from 'vue';
 import Components from "../src/components";
+import App from './App.vue';
 
 Vue.config.productionTip = false
 Vue.use(Components);
 
 new Vue({
-  render: h => h()
+  render: h => h(App)
 }).$mount('#app')

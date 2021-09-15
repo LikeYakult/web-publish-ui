@@ -12,6 +12,7 @@ import Page from "./page";
 import KlineLoading from "./kline-loading";
 import GlobalLoading from "./global-loading";
 import NoData from "./no-data";
+import NoLogin from "./no-login";
 
 const components = {
     DatePicker,
@@ -29,7 +30,8 @@ const components = {
     Page,
     KlineLoading,
     GlobalLoading,
-    NoData
+    NoData,
+    NoLogin
 };
 
 const install = (vue) => {

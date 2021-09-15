@@ -1,8 +1,8 @@
 <template>
-    <div class="trade-no-data">
-        <div class="container">
+    <div class="trade-no-login" v-if="!isLogin">
+        <div class="login-container" @click="handleClick">
             <img class="icon" src="../../assets/tips.png" />
-            <p>NoData</p>
+            <p>{{ $t('app.go-login') }}</p>
         </div>
     </div>
 </template>
@@ -14,6 +14,11 @@ export default {
         isLogin: {
             type: Boolean,
             default: false
+        }
+    },
+    methods: {
+        handleClick() {
+            this.$emit("login")
         }
     }
 }

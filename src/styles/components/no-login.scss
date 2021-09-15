@@ -3,16 +3,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    .ant-empty {
-        width: 100%;
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         cursor: pointer;
-        .ant-empty-image {
-            width: 100%;
-            svg {
-                width: 100%;
-            }
-        }
-        .ant-empty-description {
+        p {
+            margin-top: 8px;
             @include baseFontColorThemeStyles;
         }
     }
