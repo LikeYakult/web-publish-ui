@@ -133,7 +133,7 @@
         border-radius: 4px;
         cursor: pointer;
         &.cancel {
-
+            @include baseFontColorThemeStyles;
         }
         &.ok {
             color: #fff;

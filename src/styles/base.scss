@@ -115,12 +115,14 @@ button, a, input {
 }
 
 
-.red-market{
+.red-market {
     @include MarketGLintBgRed;
 }
-.green-market{
+
+.green-market {
     @include MarketGLintBgGreen;
 }
+
 .green-background {
     position: relative;
     > div {

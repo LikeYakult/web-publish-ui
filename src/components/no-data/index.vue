@@ -1,7 +1,7 @@
 <template>
     <div class="trade-no-data">
         <div class="container">
-            <img class="icon" src="../../assets/tips.png" />
+            <img class="icon" src="~@/assets/tips.png" />
             <p>NoData</p>
         </div>
     </div>

@@ -681,6 +681,7 @@
         background: $gLint-white-green;
     }
 }
+
 @mixin MarketGLintBackRed {
     [data-theme="dark"] & {
         background: linear-gradient(to right, rgba(143,34,58, 0.12) , $crimson-color) !important;
@@ -693,11 +694,31 @@
 
 @mixin MarketGLintBackGreen {
     [data-theme="dark"] & {
-        background: linear-gradient(to right, rgba(13,118,128, 0.12) , $dark-green-color) !important;
+        background: linear-gradient(to right, rgba(13,118,128, 0.12), $dark-green-color) !important;
     }
 
     [data-theme="white"] & {
-        background: linear-gradient(to right, rgba(13,118,128, 0.12) , $gLint-white-green) !important;
+        background: linear-gradient(to right, rgba(13,118,128, 0.12), $gLint-white-green) !important;
+    }
+}
+
+@mixin MarketGLintBackRedReverse {
+    [data-theme="dark"] & {
+        background: linear-gradient(to left, $crimson-color, rgba(143,34,58, 0.12)) !important;
+    }
+
+    [data-theme="white"] & {
+        background: linear-gradient(to left, $gLint-white-red, rgba(143,34,58, 0.12)) !important;
+    }
+}
+
+@mixin MarketGLintBackGreenReverse {
+    [data-theme="dark"] & {
+        background: linear-gradient(to left, $dark-green-color, rgba(13,118,128, 0.12)) !important;
+    }
+
+    [data-theme="white"] & {
+        background: linear-gradient(to left, $gLint-white-green, rgba(13,118,128, 0.12)) !important;
     }
 }
 
