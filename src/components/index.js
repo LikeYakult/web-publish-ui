@@ -3,6 +3,7 @@ import {Select, Option, OptionGroup} from './select';
 import Modal from "./modal";
 import Slider from "./slider";
 import Poptip from "./poptip";
+import Radio from "./radio";
 import Button from "./button";
 import PopConfirm from "./popconfirm";
 import Message from "./message";
@@ -15,6 +16,8 @@ import NoData from "./no-data";
 import NoLogin from "./no-login";
 
 const components = {
+    Radio,
+    RadioGroup: Radio.Group,
     DatePicker,
     Select,
     Option,
