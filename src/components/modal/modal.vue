@@ -105,7 +105,8 @@ export default {
         transitionNames: {
             type: Array,
             default () {
-                return ['ease', 'fade'];
+                // return ['ease', 'fade'];
+                return ['ease', ''];
             }
         },
         transfer: {

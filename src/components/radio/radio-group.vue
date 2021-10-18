@@ -17,7 +17,7 @@ export default {
     mixins: [ Emitter ],
     props: {
         value: {
-            type: [String, Number],
+            type: [String, Number, Boolean],
             default: ""
         },
         size: {

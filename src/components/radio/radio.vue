@@ -11,7 +11,7 @@
                    @focus="onFocus"
                    @blur="onBlur"
             />
-            <slot>{{ label }}</slot>
+            <span class="trade-radio-text"><slot>{{ label }}</slot></span>
         </span>
     </label>
 </template>
@@ -42,7 +42,7 @@ export default {
             default: false
         },
         label: {
-            type: [String, Number]
+            type: [String, Number, Boolean]
         },
         size: {
             validator(value) {

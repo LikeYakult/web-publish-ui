@@ -31,7 +31,8 @@
 }
 
 .trade-radio {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     margin-right: 4px;
     white-space: nowrap;
     position: relative;
@@ -56,6 +57,10 @@
     border-radius: 50%;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out
+}
+
+.trade-radio-text {
+    margin-left: 8px;
 }
 
 .trade-radio-inner:after {
