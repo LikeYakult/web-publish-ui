@@ -1,0 +1,240 @@
+.trade-checkbox-focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
+    box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
+    z-index: 1
+}
+
+.trade-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    line-height: 1;
+    position: relative
+}
+
+.trade-checkbox-disabled {
+    cursor: not-allowed
+}
+
+.trade-checkbox:hover .trade-checkbox-inner {
+    border-color: #bcbcbc
+}
+
+.trade-checkbox-inner {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #dcdee2;
+    border-radius: 2px;
+    background-color: #fff;
+    -webkit-transition: border-color .2s ease-in-out, background-color .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+    transition: border-color .2s ease-in-out, background-color .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+    transition: border-color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+    transition: border-color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out
+}
+
+.trade-checkbox-inner:after {
+    content: '';
+    display: table;
+    width: 4px;
+    height: 8px;
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    border: 2px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    -webkit-transform: rotate(45deg) scale(0);
+    -ms-transform: rotate(45deg) scale(0);
+    transform: rotate(45deg) scale(0);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.trade-checkbox-large .trade-checkbox-inner {
+    width: 16px;
+    height: 16px
+}
+
+.trade-checkbox-large .trade-checkbox-inner:after {
+    width: 5px;
+    height: 9px
+}
+
+.trade-checkbox-small {
+    font-size: 12px
+}
+
+.trade-checkbox-small .trade-checkbox-inner {
+    width: 12px;
+    height: 12px
+}
+
+.trade-checkbox-small .trade-checkbox-inner:after {
+    top: 0;
+    left: 3px
+}
+
+.trade-checkbox-input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0
+}
+
+.trade-checkbox-input[disabled] {
+    cursor: not-allowed
+}
+
+.trade-checkbox-checked:hover .trade-checkbox-inner {
+    border-color: #2d8cf0
+}
+
+.trade-checkbox-checked .trade-checkbox-inner {
+    border-color: #2d8cf0;
+    background-color: #2d8cf0
+}
+
+.trade-checkbox-checked .trade-checkbox-inner:after {
+    content: '';
+    display: table;
+    width: 4px;
+    height: 8px;
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    border: 2px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.trade-checkbox-large .trade-checkbox-checked .trade-checkbox-inner:after {
+    width: 5px;
+    height: 9px
+}
+
+.trade-checkbox-small .trade-checkbox-checked .trade-checkbox-inner:after {
+    top: 0;
+    left: 3px
+}
+
+.trade-checkbox-disabled.trade-checkbox-checked:hover .trade-checkbox-inner {
+    border-color: #dcdee2
+}
+
+.trade-checkbox-disabled.trade-checkbox-checked .trade-checkbox-inner {
+    background-color: #f3f3f3;
+    border-color: #dcdee2
+}
+
+.trade-checkbox-disabled.trade-checkbox-checked .trade-checkbox-inner:after {
+    -webkit-animation-name: none;
+    animation-name: none;
+    border-color: #ccc
+}
+
+.trade-checkbox-disabled:hover .trade-checkbox-inner {
+    border-color: #dcdee2
+}
+
+.trade-checkbox-disabled .trade-checkbox-inner {
+    border-color: #dcdee2;
+    background-color: #f3f3f3
+}
+
+.trade-checkbox-disabled .trade-checkbox-inner:after {
+    -webkit-animation-name: none;
+    animation-name: none;
+    border-color: #f3f3f3
+}
+
+.trade-checkbox-disabled .trade-checkbox-inner-input {
+    cursor: default
+}
+
+.trade-checkbox-disabled + span {
+    color: #ccc;
+    cursor: not-allowed
+}
+
+.trade-checkbox-indeterminate .trade-checkbox-inner:after {
+    content: '';
+    width: 8px;
+    height: 1px;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    position: absolute;
+    left: 2px;
+    top: 5px
+}
+
+.trade-checkbox-indeterminate:hover .trade-checkbox-inner {
+    border-color: #2d8cf0
+}
+
+.trade-checkbox-indeterminate .trade-checkbox-inner {
+    background-color: #2d8cf0;
+    border-color: #2d8cf0
+}
+
+.trade-checkbox-indeterminate.trade-checkbox-disabled .trade-checkbox-inner {
+    background-color: #f3f3f3;
+    border-color: #dcdee2
+}
+
+.trade-checkbox-indeterminate.trade-checkbox-disabled .trade-checkbox-inner:after {
+    border-color: #c5c8ce
+}
+
+.trade-checkbox-large .trade-checkbox-indeterminate .trade-checkbox-inner:after {
+    width: 10px;
+    top: 6px
+}
+
+.trade-checkbox-small .trade-checkbox-indeterminate .trade-checkbox-inner:after {
+    width: 6px;
+    top: 4px
+}
+
+.trade-checkbox-wrapper {
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 8px
+}
+
+.trade-checkbox-wrapper-disabled {
+    cursor: not-allowed
+}
+
+.trade-checkbox-wrapper.trade-checkbox-large {
+    font-size: 14px
+}
+
+.trade-checkbox + span, .trade-checkbox-wrapper + span {
+    margin-right: 4px
+}
+
+.trade-checkbox-group {
+    font-size: 14px
+}
+
+.trade-checkbox-group-item {
+    display: inline-block
+}

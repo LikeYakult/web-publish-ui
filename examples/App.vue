@@ -5,6 +5,7 @@
             <Radio label="爪哇犀牛"></Radio>
             <Radio label="印度黑羚"></Radio>
         </Radio-group>
+        <Checkbox v-model="single">Checkbox</Checkbox>
     </div>
 </template>
 
@@ -13,7 +14,8 @@ export default {
     name: "App",
     data() {
         return {
-            animal: '爪哇犀牛'
+            animal: '爪哇犀牛',
+            single: false
         }
     }
 }

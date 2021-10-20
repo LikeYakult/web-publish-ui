@@ -2,6 +2,7 @@ import DatePicker from "./date-picker";
 import {Select, Option, OptionGroup} from './select';
 import Modal from "./modal";
 import Slider from "./slider";
+import Checkbox from "./checkbox";
 import Poptip from "./poptip";
 import Radio from "./radio";
 import Button from "./button";
@@ -18,6 +19,8 @@ import NoLogin from "./no-login";
 const components = {
     Radio,
     RadioGroup: Radio.Group,
+    Checkbox,
+    CheckboxGroup: Checkbox.Group,
     DatePicker,
     Select,
     Option,
