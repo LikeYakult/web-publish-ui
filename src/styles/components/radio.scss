@@ -76,11 +76,8 @@
     content: ' ';
     background-color: #2d8cf0;
     opacity: 0;
-    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0)
+    transform: scale(0);
 }
 
 .trade-radio-large {
@@ -123,7 +120,7 @@
 }
 
 .trade-radio-checked .trade-radio-inner {
-    border-color: #2d8cf0
+    border-color: #2d8cf0;
 }
 
 .trade-radio-checked .trade-radio-inner:after {
@@ -136,7 +133,7 @@
 }
 
 .trade-radio-checked:hover .trade-radio-inner {
-    border-color: #2d8cf0
+    border-color: #2d8cf0;
 }
 
 .trade-radio-disabled {
@@ -240,7 +237,7 @@ span.trade-radio + * {
 
 .trade-radio-group-button .trade-radio-wrapper:hover {
     position: relative;
-    color: #2d8cf0
+    color: #2d8cf0;
 }
 
 .trade-radio-group-button .trade-radio-wrapper:hover .trade-radio {
@@ -257,21 +254,18 @@ span.trade-radio + * {
     background: #fff;
     border-color: #2d8cf0;
     color: #2d8cf0;
-    -webkit-box-shadow: -1px 0 0 0 #2d8cf0;
     box-shadow: -1px 0 0 0 #2d8cf0;
-    z-index: 1
+    z-index: 1;
 }
 
 .trade-radio-group-button .trade-radio-wrapper-checked:before {
     background: #2d8cf0;
-    opacity: .1
+    opacity: .1;
 }
 
 .trade-radio-group-button .trade-radio-wrapper-checked.trade-radio-focus {
-    -webkit-box-shadow: -1px 0 0 0 #2d8cf0, 0 0 0 2px rgba(45, 140, 240, .2);
     box-shadow: -1px 0 0 0 #2d8cf0, 0 0 0 2px rgba(45, 140, 240, .2);
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
 }
 
 .trade-radio-group-button .trade-radio-wrapper-checked.trade-radio-focus:after {
@@ -288,8 +282,7 @@ span.trade-radio + * {
 
 .trade-radio-group-button .trade-radio-wrapper-checked:first-child {
     border-color: #2d8cf0;
-    -webkit-box-shadow: none;
-    box-shadow: none
+    box-shadow: none;
 }
 
 .trade-radio-group-button .trade-radio-wrapper-checked:hover {
@@ -299,7 +292,7 @@ span.trade-radio + * {
 
 .trade-radio-group-button .trade-radio-wrapper-checked:active {
     border-color: #2b85e4;
-    color: #2b85e4
+    color: #2b85e4;
 }
 
 .trade-radio-group-button .trade-radio-wrapper-disabled {
