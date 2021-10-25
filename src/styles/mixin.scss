@@ -110,21 +110,31 @@
 
 @mixin backgroundThemeStyles {
     [data-theme="dark"] & {
-        background: $background-color-dark;
+        background: $black;
     }
 
     [data-theme="white"] & {
-        background: $background-color-white;
+        background: $background-color-white-deep;
     }
 }
 
 @mixin backgroundDeppThemeStyles {
     [data-theme="dark"] & {
-        background: $background-color-dark-deep;
+        background: $background-active;
     }
 
     [data-theme="white"] & {
-        background: $background-color-white-deep;
+        background: $white;
+    }
+}
+
+@mixin backgroundLayoutStyles {
+    [data-theme="dark"] & {
+        background: $background-color-layout;
+    }
+
+    [data-theme="white"] & {
+        background: $white;
     }
 }
 
@@ -262,12 +272,12 @@
 
 @mixin layoutBottomBorder {
     [data-theme="dark"] & {
-        border-bottom: 1px $background-color-dark solid;
+        border-bottom: 2px $black solid;
     }
 
     [data-theme="white"] & {
         color: $black-opacity75;
-        border-bottom: 1px $background-color-white solid;
+        border-bottom: 2px $background-color-white-deep solid;
     }
 }
 
@@ -285,18 +295,17 @@
 
 @mixin tvIntervalBtnActive {
     [data-theme="dark"] & {
-        color: $white-active;
+        color: $base-active;
     }
 
     [data-theme="white"] & {
-        background: #ffedd8;
-        color: $white-active;
+        color: $base-active;
     }
 }
 
 @mixin searchIconColor {
     [data-theme="dark"] & {
-        color: $search-icon-dark;
+        color: $base-active;
     }
 
     [data-theme="white"] & {
@@ -479,15 +488,8 @@
 }
 
 @mixin btnBorderColor {
-    [data-theme="dark"] & {
-        border: 1px $btn-primary-bg solid;
-        color: $btn-primary-bg;
-    }
-
-    [data-theme="white"] & {
-        color: $white-active;
-        border: 1px solid $white-active;
-    }
+    color: $white-active;
+    border: 1px solid $white-active;
 }
 
 @mixin baseHeaderColor {
@@ -658,7 +660,7 @@
     }
 
     [data-theme="white"] & {
-        background: $background-color-white-deep;
+        background: $white;
     }
 }
 
