@@ -1,6 +1,5 @@
 .trade-radio-focus {
-    -webkit-box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
-    box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
+    box-shadow: 0 0 0 2px rgba(255, 164, 0, 0.2);
     z-index: 1
 }
 
@@ -74,7 +73,7 @@
     border-top: 0;
     border-left: 0;
     content: ' ';
-    background-color: #2d8cf0;
+    background-color: #FFA400;
     opacity: 0;
     transition: all .2s ease-in-out;
     transform: scale(0);
@@ -120,7 +119,7 @@
 }
 
 .trade-radio-checked .trade-radio-inner {
-    border-color: #2d8cf0;
+    border-color: #FFA400;
 }
 
 .trade-radio-checked .trade-radio-inner:after {
@@ -133,7 +132,7 @@
 }
 
 .trade-radio-checked:hover .trade-radio-inner {
-    border-color: #2d8cf0;
+    border-color: #FFA400;
 }
 
 .trade-radio-disabled {
@@ -214,7 +213,7 @@ span.trade-radio + * {
     height: 36px;
     left: -1px;
     top: -3px;
-    background: rgba(45, 140, 240, .2);
+    background: rgba(255, 164, 0, 0.2);
     opacity: 0
 }
 
@@ -237,7 +236,7 @@ span.trade-radio + * {
 
 .trade-radio-group-button .trade-radio-wrapper:hover {
     position: relative;
-    color: #2d8cf0;
+    color: #FFA400;
 }
 
 .trade-radio-group-button .trade-radio-wrapper:hover .trade-radio {
@@ -252,19 +251,19 @@ span.trade-radio + * {
 
 .trade-radio-group-button .trade-radio-wrapper-checked {
     background: #fff;
-    border-color: #2d8cf0;
-    color: #2d8cf0;
-    box-shadow: -1px 0 0 0 #2d8cf0;
+    border-color: #FFA400;
+    color: #FFA400;
+    box-shadow: -1px 0 0 0 #FFA400;
     z-index: 1;
 }
 
 .trade-radio-group-button .trade-radio-wrapper-checked:before {
-    background: #2d8cf0;
+    background: #FFA400;
     opacity: .1;
 }
 
 .trade-radio-group-button .trade-radio-wrapper-checked.trade-radio-focus {
-    box-shadow: -1px 0 0 0 #2d8cf0, 0 0 0 2px rgba(45, 140, 240, .2);
+    box-shadow: -1px 0 0 0 #FFA400, 0 0 0 2px rgba(255, 164, 0, 0.2);
     transition: all .2s ease-in-out;
 }
 
@@ -272,27 +271,26 @@ span.trade-radio + * {
     left: -3px;
     top: -3px;
     opacity: 1;
-    background: rgba(45, 140, 240, .2)
+    background: rgba(255, 164, 0, 0.2);
 }
 
 .trade-radio-group-button .trade-radio-wrapper-checked.trade-radio-focus:first-child {
-    -webkit-box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
-    box-shadow: 0 0 0 2px rgba(45, 140, 240, .2)
+    box-shadow: 0 0 0 2px rgba(255, 164, 0, 0.2);
 }
 
 .trade-radio-group-button .trade-radio-wrapper-checked:first-child {
-    border-color: #2d8cf0;
+    border-color: #FFA400;
     box-shadow: none;
 }
 
 .trade-radio-group-button .trade-radio-wrapper-checked:hover {
-    border-color: #57a3f3;
-    color: #57a3f3
+    border-color: rgba(255, 164, 0, 0.2);;
+    color: rgba(255, 164, 0, 0.2);
 }
 
 .trade-radio-group-button .trade-radio-wrapper-checked:active {
-    border-color: #2b85e4;
-    color: #2b85e4;
+    border-color: rgba(255, 164, 0, 0.2);
+    color: rgba(255, 164, 0, 0.2);;
 }
 
 .trade-radio-group-button .trade-radio-wrapper-disabled {

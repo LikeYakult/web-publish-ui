@@ -18,15 +18,7 @@
     position: relative;
     border-radius: 2px;
     transition: all .2s ease-in-out;
-    [data-theme="dark"] & {
-        border: 1px $white-active solid;
-        color: $white-active;
-    }
-
-    [data-theme="white"] & {
-        color: #121c32;
-        border: 1px solid #d6e0ed;
-    }
+    @include btnBorderColor;
 }
 
 

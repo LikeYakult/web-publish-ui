@@ -4,30 +4,36 @@
     &.trade-up, &.buy {
         &.red-cls {
             .trade-slider-bar {
-                background: #E75A5B;
+                //background: #E75A5B;
+                background: $up-color;
             }
             .trade-slider-button {
-                border: 3px solid #E75A5B;
+                //border: 3px solid #E75A5B;
+                border: 3px solid $up-color;
             }
             .trade-slider-stop {
                 &.active {
                     &.over {
-                        background: #E75A5B;
+                        //background: #E75A5B;
+                        background: $up-color;
                     }
                 }
             }
         }
         &.green-cls {
             .trade-slider-bar {
-                background: #38AF75;
+                //background: #38AF75;
+                background: $down-color;
             }
             .trade-slider-button {
-                border: 3px solid #38AF75;
+                //border: 3px solid #38AF75;
+                border: 3px solid $down-color;
             }
             .trade-slider-stop {
                 &.active {
                     &.over {
-                        background: #38AF75;
+                        //background: #38AF75;
+                        background: $down-color;
                     }
                 }
             }
@@ -36,30 +42,36 @@
     &.trade-down, &.sell {
         &.red-cls {
             .trade-slider-bar {
-                background: #E75A5B;
+                //background: #E75A5B;
+                background: $up-color;
             }
             .trade-slider-button {
-                border: 3px solid #E75A5B;
+                //border: 3px solid #E75A5B;
+                border: 3px solid $up-color;
             }
             .trade-slider-stop {
                 &.active {
                     &.over {
-                        background: #E75A5B;
+                        //background: #E75A5B;
+                        background: $up-color;
                     }
                 }
             }
         }
         &.green-cls {
             .trade-slider-bar {
-                background: #38AF75;
+                //background: #38AF75;
+                background: $down-color;
             }
             .trade-slider-button {
-                border: 3px solid #38AF75;
+                //border: 3px solid #38AF75;
+                border: 3px solid $down-color;
             }
             .trade-slider-stop {
                 &.active {
                     &.over {
-                        background: #38AF75;
+                        //background: #38AF75;
+                        background: $down-color;
                     }
                 }
             }
@@ -69,8 +81,8 @@
 
 .trade-slider-wrap {
     width: 100%;
-    height: 4px;
-    background-color: #374350;
+    height: 1px;
+    background-color: #283341;
     border-radius: 3px;
     vertical-align: middle;
     position: relative;
@@ -89,7 +101,7 @@
 }
 
 .trade-slider-bar {
-    height: 4px;
+    height: 1px;
     border-radius: 3px;
     position: absolute;
     z-index: 1;
@@ -101,7 +113,7 @@
     text-align: center;
     background-color: transparent;
     position: absolute;
-    top: -7px;
+    top: -8px;
     transform: translateX(-50%);
     z-index: 3;
 }
@@ -121,8 +133,8 @@
 }
 
 .trade-slider-button {
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: #fff;
     outline: 0;
@@ -130,11 +142,11 @@
 
 .trade-slider-stop.active {
     position: absolute;
-    width: 12px;
-    height: 12px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
-    background-color: #374350;
-    transform: translate3d(-50%, -4px, 0px);
+    background-color: #394757;
+    transform: translate3d(-50%, -2px, 0px);
     z-index: 2;
     border: 1px solid transparent;
 }
@@ -149,8 +161,7 @@
 }
 
 .trade-slider-stop.active.over {
-    border: 1px #1A2636 solid;
-    transform: translate3d(-50%, -4px, 0px);
+    transform: translate3d(-50%, -2px, 0px);
 }
 
 .trade-slider-disabled .trade-slider-stop.active.over {
