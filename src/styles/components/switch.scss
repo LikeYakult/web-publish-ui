@@ -1,0 +1,196 @@
+.trade-switch {
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+    line-height: 20px;
+    border-radius: 22px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.trade-switch-loading {
+    opacity: .4
+}
+
+.trade-switch-inner {
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    left: 23px
+}
+
+.trade-switch-inner i {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    position: relative;
+    top: -1px
+}
+
+.trade-switch:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background-color: #fff;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    cursor: pointer;
+    -webkit-transition: left .2s ease-in-out, width .2s ease-in-out;
+    transition: left .2s ease-in-out, width .2s ease-in-out
+}
+
+.trade-switch:active:after {
+    width: 26px
+}
+
+.trade-switch:before {
+    content: '';
+    display: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    z-index: 1;
+    border: 1px solid #FFA400;
+    border-color: transparent transparent transparent #FFA400;
+    -webkit-animation: switch-loading 1s linear;
+    animation: switch-loading 1s linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
+.trade-switch-loading:before {
+    display: block
+}
+
+.trade-switch:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
+    box-shadow: 0 0 0 2px rgba(45, 140, 240, .2);
+    outline: 0
+}
+
+.trade-switch:focus:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.trade-switch-small {
+    width: 28px;
+    height: 16px;
+    line-height: 14px
+}
+
+.trade-switch-small:after {
+    width: 12px;
+    height: 12px
+}
+
+.trade-switch-small:active:after {
+    width: 14px
+}
+
+.trade-switch-small:before {
+    width: 10px;
+    height: 10px;
+    left: 2px;
+    top: 2px
+}
+
+.trade-switch-small.trade-switch-checked:after {
+    left: 13px
+}
+
+.trade-switch-small.trade-switch-checked:before {
+    left: 14px
+}
+
+.trade-switch-small:active.trade-switch-checked:after {
+    left: 11px
+}
+
+.trade-switch-large {
+    width: 56px
+}
+
+.trade-switch-large:active:after {
+    width: 26px
+}
+
+.trade-switch-large:active:after {
+    width: 30px
+}
+
+.trade-switch-large.trade-switch-checked:after {
+    left: 35px
+}
+
+.trade-switch-large.trade-switch-checked:before {
+    left: 37px
+}
+
+.trade-switch-large:active.trade-switch-checked:after {
+    left: 23px
+}
+
+.trade-switch-checked {
+    border-color: #FFA400;
+    background-color: #FFA400
+}
+
+.trade-switch-checked .trade-switch-inner {
+    left: 7px
+}
+
+.trade-switch-checked:after {
+    left: 23px
+}
+
+.trade-switch-checked:before {
+    left: 25px
+}
+
+.trade-switch-checked:active:after {
+    left: 15px
+}
+
+.trade-switch-disabled {
+    cursor: not-allowed;
+    opacity: .4
+}
+
+.trade-switch-disabled:after {
+    background: #fff;
+    cursor: not-allowed
+}
+
+.trade-switch-disabled .trade-switch-inner {
+    color: #fff
+}
+
+.trade-switch-disabled.trade-switch-checked {
+    border-color: #FFA400;
+    background-color: #FFA400;
+    opacity: .4
+}
+
+.trade-switch-disabled.trade-switch-checked:after {
+    background: #fff
+}
+
+.trade-switch-disabled.trade-switch-checked .trade-switch-inner {
+    color: #fff
+}

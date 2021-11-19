@@ -1,0 +1,73 @@
+.trade-collapse {
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    border: 1px solid #dcdee2
+}
+
+.trade-collapse-simple {
+    border-left: none;
+    border-right: none;
+    background-color: #fff;
+    border-radius: 0
+}
+
+.trade-collapse > .trade-collapse-item {
+    border-top: 1px solid #dcdee2
+}
+
+.trade-collapse > .trade-collapse-item:first-child {
+    border-top: 0
+}
+
+.trade-collapse > .trade-collapse-item > .trade-collapse-header {
+    height: 38px;
+    line-height: 38px;
+    padding-left: 16px;
+    color: #666;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.trade-collapse > .trade-collapse-item > .trade-collapse-header > i {
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    margin-right: 14px
+}
+
+.trade-collapse > .trade-collapse-item.trade-collapse-item-active > .trade-collapse-header {
+    border-bottom: 1px solid #dcdee2
+}
+
+.trade-collapse-simple > .trade-collapse-item.trade-collapse-item-active > .trade-collapse-header {
+    border-bottom: 1px solid transparent
+}
+
+.trade-collapse > .trade-collapse-item.trade-collapse-item-active > .trade-collapse-header > i {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.trade-collapse-content {
+    color: #515a6e;
+    padding: 0 16px;
+    background-color: #fff
+}
+
+.trade-collapse-content > .trade-collapse-content-box {
+    padding-top: 16px;
+    padding-bottom: 16px
+}
+
+.trade-collapse-simple > .trade-collapse-item > .trade-collapse-content > .trade-collapse-content-box {
+    padding-top: 0
+}
+
+.trade-collapse-item:last-child > .trade-collapse-content {
+    border-radius: 0 0 3px 3px
+}

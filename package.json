@@ -1,6 +1,6 @@
 {
   "name": "web-publish-ui",
-  "version": "0.6.4",
+  "version": "0.6.7",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",

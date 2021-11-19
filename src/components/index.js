@@ -3,7 +3,10 @@ import {Select, Option, OptionGroup} from './select';
 import Modal from "./modal";
 import Slider from "./slider";
 import Checkbox from "./checkbox";
+import TradeSwitch from "./trade-switch";
 import Poptip from "./poptip";
+import Collapse from "./collapse";
+import Panel from "./collapse/panel";
 import Radio from "./radio";
 import Button from "./button";
 import PopConfirm from "./popconfirm";
@@ -20,6 +23,8 @@ const components = {
     Checkbox,
     CheckboxGroup: Checkbox.Group,
     DatePicker,
+    Collapse,
+    Panel,
     Select,
     Option,
     OptionGroup,
@@ -32,6 +37,7 @@ const components = {
     Notice,
     Tooltip,
     Page,
+    TradeSwitch,
     KlineLoading,
     GlobalLoading
 };
